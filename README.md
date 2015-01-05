@@ -1,0 +1,4 @@
+vision
+======
+
+BaseKit Standard Template
