@@ -1,0 +1,151 @@
+{
+    "name":"Trivia",
+    "thumbnail":"trivia.png",
+    "screenshot":"trivia.png",
+    "tags": { "en": ["minimal", "clean", "gallery", "blue", "portfolio", "technology", "camera", "images", "modern", "design"] },
+    "pageTypes":["home"],
+    "templateType":"standard",
+    "widgetVersion":2,
+    "images":[
+        "images/feature-bg.jpg",
+        "images/gallery/1.jpg",
+        "images/gallery/2.jpg",
+        "images/logo.png"
+    ],
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#01b4f0",
+            "color3":"#f35e26",
+            "color4":"#3d3c40",
+            "color5":"#2b3040",
+            "color6":"#ffffff",
+            "color7":"#EAEAEA"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#01b4f0",
+            "color3":"#ca1414",
+            "color4":"#000000",
+            "color5":"#888888",
+            "color6":"#ffffff",
+            "color7":"#eeeeee"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#01b4f0",
+            "color3":"#82E567",
+            "color4":"#4F7391",
+            "color5":"#888888",
+            "color6":"#ffffff",
+            "color7":"#eeeeee"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#01b4f0",
+            "color3":"#808080",
+            "color4":"#000000",
+            "color5":"#888888",
+            "color6":"#ffffff",
+            "color7":"#eeeeee"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#01b4f0",
+            "color3":"#4BA5A1",
+            "color4":"#2B7774",
+            "color5":"#888888",
+            "color6":"#ffffff",
+            "color7":"#eeeeee"
+        }
+    },
+    "fontSwatch": {
+       "title": "Arimo, Helvetica, Arial, sans-serif",
+        "font1": {
+            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "28px",
+            "font-weight": "300",
+            "line-height": "inherit",
+            "color": "@color-swatch4",
+            "letter-spacing": "2px"
+        },
+        "font2": {
+            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "24px",
+            "font-weight": "300",
+            "line-height": "inherit",
+            "color": "@color-swatch4",
+            "letter-spacing": "2px"
+        },
+        "font3": {
+            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "20px",
+            "font-weight": "300",
+            "line-height": "inherit",
+            "color": "@color-swatch4",
+            "letter-spacing": "2px"
+        },
+        "font4": {
+            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "16px",
+            "font-weight": "300",
+            "line-height": "inherit",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "15px",
+            "font-weight": "300",
+            "line-height": "28px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "inherit",
+            "color": "darken(@color-swatch7,30%)",
+            "color-hover": "@color-swatch4",
+            "letter-spacing": "2px",
+            "background-color": "@color-swatch1",
+            "background-color-hover": "@color-swatch1"
+         },
+        "font7": {
+            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "14px",
+            "font-weight": "300",
+            "line-height": "inherit",
+            "color": "@color-swatch1",
+            "letter-spacing": "2px",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,10%)"
+        },
+        "font8": {
+            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "50px",
+            "font-weight": "700",
+            "line-height": "42px",
+            "color": "@color-swatch1",
+            "letter-spacing": "3px"
+        },
+        "font9": {
+            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "16px",
+            "font-weight": "300",
+            "line-height": "inherit",
+            "color": "@color-swatch3",
+            "letter-spacing": "3px"
+        },
+        "font10": {
+            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "20px",
+            "font-weight": "400",
+            "line-height": "inherit",
+            "color": "@color-swatch4",
+            "letter-spacing": "3px"
+        }
+    }
+}

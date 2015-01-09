@@ -1,0 +1,62 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+
+<!-- Page Title -->
+<div class="page-titles">
+	<h1>{{widget('content', 'pagetitle', {content: 'This is a content widget.', lines: 'all'})|raw}}</h1>
+	<span>{{widget('content', 'pagedescription', {content: 'This is a content widget.', lines: 'all'})|raw}}</span>
+</div>
+<!-- End Page Title -->
+
+<!-- Homepage Gallery -->
+<section class="homepage-gallery">
+    {{widget('gallery', 'gallery1', 
+    {'albumRef':0,
+    'showDescription': true,
+    'showTitle': true,
+    'images':
+    [
+    {'imageHeight':'246', 'imageWidth':'246', 'url':asset('images/gallery/1.jpg'), 'title':'Image 1',  'description': 'This is an image 	1'},
+    {'imageHeight':'246', 'imageWidth':'246', 'url':asset('images/gallery/2.jpg'), 'title':'Image 2',  'description': 'This is an image 	2'},
+    ]
+    })|raw}}
+</section>
+<!-- End Homepage Gallery -->
+
+<!-- Container -->
+<div class="container">
+
+	<!-- Page Content -->
+	<section class="template-content">
+
+		<!-- Template Widgets -->
+		
+		<!-- End Template Widgets -->
+
+		<!-- Main Widet Zone -->
+	   	{{zone('main')|raw}}
+
+	</section>
+	<!-- End Page Content -->
+
+</div>
+<!-- End Container -->
+
+<!-- Footer Feature -->
+<section class="feature">
+	{{widget('feature', 'featurehome', {
+		"header": "profile", 
+		"defaultBgImg": asset('images/feature-bg.jpg'),
+		'positionTopPercentage': '0',
+		'showBtn': true,
+		buttonText: "Lorem Ipsum"
+	})|raw}}
+</section>
+<!-- End Footer Feature -->
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}

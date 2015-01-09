@@ -1,0 +1,238 @@
+// ------------------------------------------
+// BaseKit Baseplate: CSS > Plugin: Ecommerce
+// ------------------------------------------
+
+// -----------------------------
+// #Table of Contents
+// -----------------------------
+
+// 1. #SINGLE PRODUCT
+// 2. #PRODUCT LIST
+// 3. #BASKET WIDGET
+// 4. #BASKET SUMMARY
+// 5. #BASKET FILTERS
+
+
+// -------------------------------
+// 1. #Single Product
+// -------------------------------
+
+// Product Item
+.product-listing__product-content {
+    text-align: center;
+    background-color: @color-swatch3;
+    padding: 5px 0;
+}
+
+.product-listing__listing-footer {
+    text-align: center;
+}
+
+.product__product-article {
+    text-align: center;
+}
+
+.product__product-attributes a {
+    color: lighten(@font-swatch5-color,20%);
+}
+
+.product__product-actions {
+    form {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.basket-summary__quantity-minus, 
+.basket-summary__quantity-plus {
+    vertical-align: top;
+}
+
+.product__product-images {
+    width: 58%;
+    float: left;
+    padding: 0 2%;
+    @media @tablet {
+        width: 100%;
+    }
+}
+
+// Product Information
+.product-header, 
+.product-body,
+.product-actions {
+    padding-left: 60%;
+    @media @tablet {
+        padding-left: 0;
+    }
+}
+
+.product__form {
+    background-color: transparent;
+    border: 0;
+    .form-group {
+        margin-bottom: 0;
+    }
+}
+
+// Basket Buttons
+.js-ecom-product-add-to-cart-btn {
+    float: right;
+    width: 48%;
+    padding: 8px 12px;
+    background-color: @color-swatch4;
+    border: 4px solid darken(@color-swatch4,5%);
+    &:hover {
+        background-color: darken(@color-swatch4,10%);
+    }
+}
+
+.ecom-product-go-to-checkout-btn {
+    padding: 8px 12px;
+    width: 48%;
+}
+
+// -----------------------------
+// 2. #Product List
+// -----------------------------
+
+// Product List
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;     
+}
+
+// Product Item
+.product-item {
+    position: relative;
+    width: 32%;
+    margin-bottom: 2%;
+    // Display 100% at mobile
+    @media @mobile {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+}
+
+.product-listing__product-content h3,
+.product-listing__product-content p,
+.product-listing__product-content a {
+    padding-bottom: 0;
+    color: @font-swatch7-color;
+}
+
+.product-listing__product-content h3 {
+    font-size: @font-swatch4-font-size;
+}
+
+.product-listing__button {
+    background-color:transparent;
+    border: 4px solid @color-swatch7;
+    color: @font-swatch10-color;
+}
+
+// -----------------------------
+// 3. #Basket Widget
+// -----------------------------
+
+.basket__basket-item { position: relative; }
+.basket__item-image  { width: 200px; }
+
+// Display basket image and content inline
+.basket-item-image,
+.basket-item-details {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    @media @tablet {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+// Item Remove Button
+.item-remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    // Remove icon spacing
+    &:before {
+        margin-right: 0;
+    }
+}
+// Hide button text
+.remove-text { 
+    display: none;
+}
+
+// Basket Image
+.basket__image {
+    max-height: 200px;
+    max-width: 200px;
+    @media @mobile {
+        max-height: inherit;
+    }
+}
+
+
+// -------------------------------
+// 4. #BASKET SUMMARY
+// -------------------------------
+
+.basket-summary__summary-title {
+    margin-bottom:20px;
+}
+
+.basket-summary__summary-section {
+    text-align: center;
+}
+
+.basket-summary__summary-form {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.basket-summary__quantity-field {
+    border: 1px solid @color-swatch7;
+}
+
+// -------------------------------
+// 5. #BASKET FILTERS
+// -------------------------------
+
+.product-listing__listing-section {
+    @media @mobile {
+        text-align: center;
+    }
+}
+
+.product-listing__form-body {
+    margin: 20px 10px 20px 20px;
+    text-align: center;
+}
+
+.product-listing__form-group {
+    @media @mobile {
+        display: block;
+    }
+}
+
+.cell--header.basket-summary__cell, 
+.basket-summary__cell {
+    @media @mobile {
+            text-align: center;
+        }
+}
+
+select {
+    @media @mobile {
+        width:100%;
+    }
+}
+
+.product-listing__input {
+    padding:0 30px;
+}

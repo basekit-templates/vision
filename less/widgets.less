@@ -1,0 +1,646 @@
+// --------------------------------
+// BaseKit Baseplate: CSS > Widgets
+// --------------------------------
+
+
+// -----------------------------
+// #Table of Contents
+// -----------------------------
+
+//  1.   #LOGO
+//  2.   #COMPANY NAME
+//  3.   #NAVIGATION
+//  4.   #FEATURE
+
+//  5.   #IMAGES
+//  6.   #GALLERY
+//  7.   #SLIDESHOW
+
+//  8.   #BUTTONS
+//  8.1  -- #STANDARD
+//  8.2  -- #TWEET
+//  8.3  -- #DROPBOX
+//  8.4  -- #CLICK TO CALL
+//  8.5  -- #PAYPAL
+
+//  9.   #CONTACT FORM
+// 10.   #SIGNUP FORM
+
+// 11.   #SOCIAL ICONS
+// 12.   #TWITTER FEED
+
+// 13.   #DIVIDER (KEYLINE)
+// 14.   #PROFILE
+// 15.   #Facebook
+// 16.   #YELP
+// 17.   #CONTENT WIDGET
+
+// -----------------------------
+// 1.  #Logo
+// -----------------------------
+
+.widget__logo {
+    margin-right:10px;
+}
+
+.logo-link {
+    @media @tablet {
+        margin: 0px auto;
+        display: table;
+    }
+}
+
+// -----------------------------
+// 2.  #Company Name
+// -----------------------------
+
+.company-name {
+    @media @tablet {
+        text-align:center;
+    }
+}
+
+.company-link {
+    @media @tablet {
+        font-size: bkscale(@font-swatch10-font-size,0.8);
+        line-height: bkscale(@font-swatch10-line-height,0.8);
+    }
+    @media @mobile {
+        font-size: bkscale(@font-swatch10-font-size,0.7);
+        line-height: bkscale(@font-swatch10-line-height,0.7);
+    }
+}
+
+
+
+
+// -----------------------------
+// 3.  #Navigation
+// -----------------------------
+
+// Folder Item Parent: Gives arrow 
+.item-name--parent:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    margin-left: 4px;
+    border: 5px solid transparent;
+    border-top-color: @color-swatch6;
+}
+
+// Add Styles to Selected Li
+.extendednavigation li.selected {
+    a, .text {
+        color: @font-swatch6-color-hover;
+    }
+}
+
+
+// -----------------------------
+// 4.  #Feature
+// -----------------------------
+
+// Feature Background (Image)
+// --------------------------
+
+.feature-widget__background-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100px;
+    height: 350px;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    @media @mobile {
+        height:300px;
+    }
+}
+
+// Feature Content Wrap
+// --------------------
+
+.feature-widget__content-wrap {
+    text-align:center;
+    max-width: 80%;
+    @media @tablet {
+        max-width:100%;
+    }
+}
+
+// Feature Content
+// ---------------
+
+.feature-widget__headline {
+    @media @tablet {
+        font-size: bkscale(@font-swatch8-font-size,0.8);
+        line-height: bkscale(@font-swatch8-line-height,0.8);
+    }
+    @media @mobile {
+        font-size: bkscale(@font-swatch8-font-size,0.7);
+        line-height: bkscale(@font-swatch8-line-height,0.7);
+    }
+}
+
+.feature-widget__strapline {
+    @media @tablet {
+        font-size: bkscale(@font-swatch9-font-size,0.9);
+        line-height: bkscale(@font-swatch9-line-height,0.9);
+    }
+    @media @mobile {
+        font-size: bkscale(@font-swatch9-font-size,0.8);
+        line-height: bkscale(@font-swatch9-line-height,0.8);
+    }
+}
+
+// Feature Button
+// ---------------
+
+.feature-widget__button { margin: 10px 0 0 0; }
+
+// Default Page Feature
+// --------------------------
+
+.default-feature .feature-widget__background-image {
+    height: 150px;
+}
+
+// -----------------------------
+// 5.  #Images
+// -----------------------------
+
+// Image Captions
+// --------------
+
+// Gallery & Slideshow
+.image-title,
+.image-description {
+    display: inline-block;
+    color: @color-swatch1;
+}
+
+.image-title {
+    font-size: bkscale(@font-swatch8-font-size,0.4);
+    line-height: @font-swatch8-line-height;
+}
+
+.image-description {
+    font-size: @font-swatch9-font-size;
+    line-height: @font-swatch9-line-height;
+    color: @font-swatch1-color;
+}
+
+// Image Widget
+.image-widget__image-title,
+.image-widget__image-description {
+    color: @font-swatch5-color;
+}
+
+
+// -----------------------------
+// 6.  #Gallery
+// -----------------------------
+
+// Gallery Layout
+// --------------
+
+// Gallery List
+.image-gallery__gallery-list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; 
+}
+
+// Gallery Item
+.image-gallery__gallery-item {
+    position: relative;
+    width: 32%;
+    margin-bottom: 2%;
+    // Display 100% at mobile
+    @media @mobile {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+}
+
+
+// Gallery Images
+// --------------
+
+// Use Background-image Method
+.image-gallery__image-link {
+    display: block;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media @tablet {
+        height: 210px;
+    }
+}
+
+// Hide Img Element
+.image-gallery__image {
+    display: none;
+}
+
+
+// Gallery Image Captions
+// ----------------------
+
+// Hide Caption
+.image-gallery__caption {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 5px 10px 20px 15px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:    all 0.5s ease;
+    -ms-transition:     all 0.5s ease;
+    -o-transition:      all 0.5s ease;
+    transition:         all 0.5s ease;
+    .image-link:hover & {
+    background-color:fade(@color-swatch3,90%);
+  }
+}
+
+// Show Caption
+.image-link:hover .image-gallery__caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 1;
+}
+
+.image-title {
+    margin-right: 20px;
+}
+
+// -----------------------------
+// #Homepage Gallery
+// -----------------------------
+
+// Homepage Gallery Item
+.homepage-gallery .image-gallery__gallery-item {
+    position: relative;
+    width: 50%;
+    margin-bottom: 2%;
+    // Display 100% at mobile
+    @media @mobile {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+}
+
+// Gallery Item
+.homepage-gallery .image-gallery__image-link {
+    display: block;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media @tablet {
+        height: 210px;
+    }
+}
+
+.homepage-gallery .image-gallery__caption {
+    padding: 15px 30px;
+}
+
+
+
+// -----------------------------
+// 7.  #Slideshow
+// ----------------------------- 
+
+// Slideshow Layout
+// ----------------
+
+// Slideshow Height
+.slideshow, .slideshow__figure {
+    position: relative;
+    min-height: 400px;
+}
+
+.slideshow__slideshow-controls, .slideshow__caption {
+    text-align:center;
+    margin-top:15px;
+}
+
+
+// Slideshow Images
+// ----------------
+
+// Use Background-image Method
+.slideshow__figure {
+    background-size: cover;
+    background-position: center;
+}
+// Hide Img Element
+.slideshow__image {
+    display: none;
+}
+
+
+// Slideshow Image Captions
+// ------------------------
+
+.slideshow__caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: fade(@color-swatch3,90%);
+}
+
+// Slideshow Buttons
+.slideshow__slide-navigation button {
+        @media @mobile {
+        padding: 4px 12px;
+    }
+}
+
+.slideshow__slide-navigation button,
+.slideshow__button {
+    background-color:transparent;
+    border: 4px solid @color-swatch7;
+    color: @font-swatch10-color;
+}
+
+.slide-pagination {
+    margin-top:10px;
+}
+
+.button--pagination.slideshow__button {
+    border-radius: 40px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+
+// -----------------------------
+// 8.  #Buttons
+// -----------------------------
+
+//  8.1  #STANDARD
+//  --------------
+
+.feature-widget__button {
+    padding: 8px 30px;
+}
+
+//  8.2  #TWEET
+//  --------------
+
+.tweet-button .icon:before {
+    margin-right:5px;
+}
+
+//  8.3  #DROPBOX
+//  --------------
+
+.dropbox-button .icon:before {
+    margin-right:5px;
+}
+
+//  8.4  #CLICK TO CALL
+//  --------------
+
+
+//  8.5  #PAYPAL
+//  --------------
+
+.widget__paypal-button form {
+    border: 0;
+    padding:0;
+    margin:0;
+}
+
+
+
+// -----------------------------
+// 9.  #Contact Form
+// -----------------------------
+
+// Body
+.contact-form__form-body {
+    margin:0px 30px;
+    text-align:center;
+}
+
+// Inputs
+input.input[type=email],input.input[type=search], .contact-form__textarea {
+    border: 0;
+    background-color: @color-swatch1;
+    padding: 10px;
+    &:focus {
+        border-color: @color-swatch4;
+    }
+}
+
+// Button
+.contact-form__button {
+    margin:0px auto;
+    display:table;
+    border:0;
+    padding: 8px 30px;
+    background-color: @color-swatch3;
+    border: 4px solid darken(@color-swatch3,4%);
+    color: @font-swatch7-color;
+}
+
+.contact-form__input {
+    margin:0px auto;
+    display:table;
+}
+
+// -----------------------------
+// 10.  #Signup Form
+// -----------------------------
+
+.signup-form__legend {
+    padding:0;
+}
+
+.signup-form__input {
+    margin:0px auto;
+    display:table;
+}
+
+
+
+
+// -----------------------------
+// 11.  #Social Icons
+// -----------------------------
+
+.social-list {
+    padding:0;
+}
+
+.social-item {
+    margin-bottom:10px;
+}
+
+.social-link {
+    display: inline-block;
+    padding: 10px 25px 9px;
+    border: 4px solid @color-swatch7;
+    .icon:before {
+        margin: 0;
+    }
+}
+
+.social-icons__social-item {
+    &:hover {
+        background-color:@color-swatch3;
+        color:@font-swatch8-color;
+    }
+}
+
+.social-icons__social-item a:hover {
+    color:@font-swatch8-color;
+    text-decoration: none;
+}
+
+.social-name {
+    display: none;
+}
+
+// -----------------------------
+// 12.  #Twitter Feed
+// -----------------------------
+
+// Body
+.widget__twitter {
+    background-color: @color-swatch1;
+    border: 1px solid @color-swatch7;
+    padding: 20px 20px 0px;
+    @media @tablet {
+        padding:20px;
+    }
+    @media @mobile {
+        text-align:center;
+    }
+}
+
+.tweet-list {
+    padding:0;
+}
+
+// Content
+
+.twitter-feed__avatar {
+    display:inline-block;
+    margin-right:20px;
+    @media @mobile {
+        display:block;
+        margin-right:0;
+        margin-bottom:20px;
+    }
+}
+
+.twitter-feed__tweet-wrap {
+    display:inline-block;
+    vertical-align: top;
+    @media @tablet {
+        max-width:320px;
+    }
+    a {
+        font-weight: @font-swatch1-font-weight;
+    }
+    p {
+        padding-bottom:0;
+    }
+}
+
+.twitter-feed__tweet-item {
+    border-bottom: 1px solid @color-swatch7;
+    padding:0px 0px 20px 0px;
+    margin:0px 0px 20px 0px;
+    &:last-child {
+        border-bottom:0;
+        padding:0px 0px 7px 0px;
+        margin:0px 0px 7px 0px;
+    }
+}
+
+// -----------------------------
+// 13.  #Divider (Keyline)
+// -----------------------------
+
+// Add styles here...
+
+
+
+
+// -----------------------------
+// 14. #Profile
+// -----------------------------
+
+// Add styles here...
+
+
+// -----------------------------
+// 15. #Facebook
+// -----------------------------
+
+.fb_iframe_widget_fluid span {
+    max-width: 100%;
+}
+
+// -----------------------------
+// 16. #Facebook
+// -----------------------------
+
+.yelp-reviews__review-title {
+    font-size: @font-swatch4-font-size;
+}
+
+// -----------------------------
+// 7.  #Content Widget
+// ----------------------------- 
+
+.page-titles {
+    text-align:center;
+    padding: 80px 3%;
+}
+
+.page-titles h1 {
+    font-size: @font-swatch8-font-size;
+    line-height: @font-swatch8-line-height;
+}
+
+.page-titles span {
+    font-size: @font-swatch9-font-size;
+    line-height: @font-swatch9-line-height;
+    color: @font-swatch9-color;
+}

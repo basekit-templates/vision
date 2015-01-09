@@ -1,0 +1,67 @@
+// -------------------------------------
+// BaseKit Baseplate: CSS > Plugin: Menu
+// -------------------------------------
+
+// Menu Navigation
+.widget__menusections {
+    border-top :1px solid @color-swatch7;
+	border-bottom :1px solid @color-swatch7;
+	text-align: center;
+    a {
+        color: lighten(@font-swatch5-color,20%);
+    }
+}
+
+// Menu Content
+.widget__menu {
+	text-align:center;
+}
+
+.menu__section-header {
+    margin-top:20px;
+}
+
+.menu__item-subtitle {
+        color: @font-swatch9-color;
+	    &:after {
+        border-top: 1px solid @color-swatch7;
+        content: "";
+        display: block;
+        position: relative;
+        margin: 10px auto 10px;
+        min-width: 200px;
+        max-width: 200px;
+        width: 5%;
+        @media @tablet {
+            min-width: 170px;
+            max-width: 200px;
+        }
+    }
+}
+
+.menu__dietary-item {
+	&:before {
+        content: "\f005";
+		font-size: 10px;
+		vertical-align: middle;
+        color: @color-swatch3;
+    }
+}
+
+// Item Image
+.item-image {
+	background-color: darken(@color-swatch1,5%);
+}
+
+
+// Featured Section
+.menu-section--featured, .menu-item--featured  {
+    border: 4px solid darken(@color-swatch7,5%);
+    padding: 20px;
+    background-color: @color-swatch7;
+}
+
+.menu-item--featured .menu__item-subtitle:after,
+.menu-section--featured .menu__item-subtitle:after {
+    border-top: 1px solid darken(@color-swatch7,10%);
+}

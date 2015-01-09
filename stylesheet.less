@@ -1,0 +1,72 @@
+// --------------------------------
+// BaseKit Baseplate Template (v1.0)
+// --------------------------------
+
+// -----------------------------
+// #Table of Contents
+// -----------------------------
+
+// 1. #LESS INCLUDES
+// 2. #PAGE SETTINGS
+// 3. #TEMPLATE STYLES
+
+
+
+
+// -----------------------------
+// 1. #LESS Includes
+// -----------------------------
+
+@import "@{templateCommon}/bk-less-framework.less"; // BaseKit LESS Framework 
+
+// ** BaseKit LESS Framework is a set of non obtrusive LESS files that can be pulled into 
+//    your template to guarentee widgets come to life. Proivides default styles for all widgets.
+
+// Template Includes
+@import "@{templateLocal}/less/theme.less"; // Theme
+@import "@{templateLocal}/less/widgets.less"; // Widgets
+@import "@{templateLocal}/less/mixins.less"; // Mixins
+@import "@{templateLocal}/less/navigation.less"; // Navigation
+@import "@{templateLocal}/less/layout-header.less"; // Flexbox
+
+// Plugin Includes
+@import "@{templateLocal}/less/plugins/plugin-blog.less"; // Plugin: Blog CSS
+@import "@{templateLocal}/less/plugins/plugin-menu.less"; // Plugin: Menu CSS
+@import "@{templateLocal}/less/plugins/plugin-ecommerce.less"; // Plugin: Ecommerce CSS
+
+
+
+
+// -----------------------------
+// 2. #Page Settings **
+// -----------------------------
+
+// ** Styles for advanced Baseplate template - remove when developing a custom template
+
+// Page Container 
+// --------------
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 1% 5%;
+	@media @tablet {
+		padding: 3% 3%;
+	}
+	@media @mobile {
+		padding: 2% 3%;
+	}
+}
+
+
+// -----------------------------
+// 3. #Template Styles
+// -----------------------------
+
+.template-content {
+	width:100%;
+	margin:0px auto;
+	@media @tablet {
+		width:100%;
+	}
+}

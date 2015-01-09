@@ -1,4 +1,4 @@
-vision
-======
+Vision
+=========
 
-BaseKit Standard Template
+BaseKit Standard Theme
