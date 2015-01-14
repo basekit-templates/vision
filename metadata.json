@@ -1,8 +1,8 @@
 {
-    "name":"Trivia",
-    "thumbnail":"trivia.png",
-    "screenshot":"trivia.png",
-    "tags": { "en": ["minimal", "clean", "gallery", "blue", "portfolio", "technology", "camera", "images", "modern", "design"] },
+    "name":"Vision",
+    "thumbnail":"vision.png",
+    "screenshot":"vision.png",
+    "tags": { "en": ["minimal", "clean", "gallery", "orange", "portfolio", "technology", "camera", "images", "modern", "design"] },
     "pageTypes":["home"],
     "templateType":"standard",
     "widgetVersion":2,
