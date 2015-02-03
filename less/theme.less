@@ -127,10 +127,11 @@ blockquote:before {
 // Form
 // ----------
 
-form, .form {
+.form {
     background-color: @color-swatch7;
     border: 4px solid darken(@color-swatch7,4%);
     padding: 20px 0 10px;
+    text-align: center;
     @media @tablet {
     	padding:10px 0;
     }
@@ -175,18 +176,20 @@ form, .form {
 // ----------
 
 legend,
-.signup-form__form label,
-.blog-search__form label { 
+.signupform__legend,
+.blogsearch__legend,
+.contactform__legend { 
 	width: 100%;
 	padding: 10px 30px 20px;
 	color: @font-swatch9-color;
+	font-size: @font-swatch2-font-size;
 	@media @mobile {
 		padding: 6px 20px;
 	}
 }
 
 label {
-	display:none;
+	display: none;
 }
 
 // Select
@@ -195,7 +198,7 @@ label {
 select {
     height: 36px;
     outline: none;
-    border: 1px solid darken(@color-swatch1,10%);
+    border: 1px solid darken(@color-swatch7,10%);
     border-radius: 0;
     background-color: @color-swatch1;
     font-size: 12px;
@@ -210,14 +213,18 @@ select {
 // Inputs: Text
 // ------------
 
+input {
+	border: 1px solid darken(@color-swatch7,10%);
+}
+
 input[type="search"],
 input[type="email"],
 input[type="password"],
 textarea,
 .input--single-line {
-    border: 0;
+	border: 1px solid darken(@color-swatch7,10%);
     &:focus {
-        border: 0;
+    	border: 1px solid darken(@color-swatch7,10%);
         box-shadow: none;
         outline: none;
     }
@@ -237,7 +244,7 @@ textarea,
 // -----------------------------
 
 button, .button {
-    padding: 8px 30px;
+    padding: 4px 30px;
     background-color: @color-swatch3;
     border: 4px solid darken(@color-swatch3,4%);
     color: @font-swatch7-color;
