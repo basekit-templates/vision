@@ -50,7 +50,7 @@
     }
 }
 
-.logo {
+.header-logo {
     // Flex child
     -webkit-box-ordinal-group: 1;
     -moz-box-ordinal-group: 1;
@@ -90,7 +90,7 @@
 // 2.  #Company Name
 // -----------------------------
 
-.companyname {
+.header-companyname {
     // Flex child
     -webkit-box-ordinal-group: 1;
     -moz-box-ordinal-group: 1;
@@ -105,14 +105,12 @@
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
-
     @media @tablet {
         -webkit-order: 2;
         -ms-flex-order: 2;
         order: 2;
-        padding: 10px 0px;
         display:block;
-        }
+    }
 }
 
 .companyname {
@@ -139,13 +137,15 @@
 // 3.  #Navigation
 // -----------------------------
 
-.extendednavigation {
+// See 'less/navigation.less'
+
+.header-extendednavigation {
     // Flex child
     -webkit-box-ordinal-group: 1;
     -moz-box-ordinal-group: 1;
-    -webkit-order: 3;
-    -ms-flex-order: 3;
-    order: 3;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
+    order: 4;
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -webkit-flex: 1 1 auto;
@@ -155,12 +155,11 @@
     -ms-flex-item-align: auto;
     align-self: auto;
     @media @tablet {
-        -webkit-order: 3;
-        -ms-flex-order: 3;
-        order: 3;
+        -webkit-order: 4;
+        -ms-flex-order: 4;
+        order: 4;
         margin: 0;
         width: 100%;
-        min-height: @bk-pull-button-height;
     }
 }
 
