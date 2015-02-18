@@ -197,50 +197,61 @@
 // 5. #BASKET FILTERS
 // -------------------------------
 
-.ecomproductslist__listing-header {
-    text-align: center;
+.ecomproductslist__fieldset--filters {
+    float:left;
+    @media @tablet {
+        width:100%;
+    }
 }
 
-.ecomproductslist__listing-section {
-    @media @mobile {
+.ecomproductslist__fieldset--search {
+    float: right;
+    @media @tablet {
+        float: initial;
+    }
+}
+
+.ecomproductslist__form {
+    max-width:100%;
+    padding: 20px 20px 0 20px;
+    .clearfix
+}
+
+.ecomproductslist__form-group {
+    display: inline-block;
+    @media @tablet {
+        width: 100%;
+        display: block;
+    }
+}
+
+.ecomproductslist__legend {
+    padding: 10px 0px 20px;
+    text-align: left;
+    @media @tablet {
         text-align: center;
     }
 }
 
 .ecomproductslist__form-body {
-    margin: 20px;
-    text-align: center;
+    margin: 0 0px 20px 0px;
 }
 
-.ecomproductslist__form-group {
-    @media @mobile {
-        display: block;
-    }
-}
-
-.cell--header.basket-summary__cell, 
-.basket-summary__cell {
+.cell--header.ecombasketsummary__cell, 
+.ecombasketsummary__cell {
     @media @mobile {
             text-align: center;
         }
 }
 
 select {
-    @media @mobile {
+    @media @tablet {
         width:100%;
     }
 }
 
 .ecomproductslist__input {
-    padding:1px 30px;
-}
-
-.product-filters .form-group {
-    margin-right: 0;
-    @media @tablet {
-        width: 100%;
-        display: block;
-    }
+    padding:4px 30px;
 }
 
 // -------------------------------
