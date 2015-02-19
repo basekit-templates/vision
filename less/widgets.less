@@ -757,13 +757,18 @@ input.input[type=search],
         margin: 0px auto 10px;
         display: table;
     }
+    .twitter__tweet-wrap a {
+        @color-swatch3;
+    }
     .companyheadline__headline, 
     .companystrapline__strapline, 
     .companydescription__description {
+        font-family:@font-swatch5-font-family; 
+        font-weight: @font-swatch5-font-weight; 
+        line-height:@font-swatch5-line-height; 
+        letter-spacing: @font-swatch5-letter-spacing; 
         font-size: @font-swatch5-font-size;
-        line-height: @font-swatch5-line-height;
-        font-weight: @font-swatch5-font-weight;
-        color: @font-swatch10-color;
+        color: @font-swatch8-color;
     }
     .signupform__form-group {
         margin-bottom: 0;
@@ -779,7 +784,11 @@ input.input[type=search],
         padding: 4px;
     }  
     .signupform__form {
-        padding: 20px 0 20px;
+        padding: 10px 0 20px;
+        min-width: 400px;
+        @media @mobile {
+            min-width: 280px;
+        }
     }   
     .social-link {
         padding: 0;
@@ -797,6 +806,9 @@ input.input[type=search],
     } 
     .map__embed-wrap {
         min-width: 400px;
+    }
+    input.input[type=email] {
+        color: @font-swatch5-color;
     }
 }
 
