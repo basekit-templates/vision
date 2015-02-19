@@ -748,57 +748,58 @@ input.input[type=search],
     .twitter__tweet-item {
         text-align: center;
     }
-    .twitter__tweet-content, .twitter__timestamp {
-        color: red;
+    .twitter__tweet-content, 
+    .twitter__timestamp,
+    .twitter__account-link {
+        color: @font-swatch5-color;
+    }
+    .twitter__avatar {
+        margin: 0px auto 10px;
+        display: table;
+    }
+    .companyheadline__headline, 
+    .companystrapline__strapline, 
+    .companydescription__description {
+        font-size: @font-swatch5-font-size;
+        line-height: @font-swatch5-line-height;
+        font-weight: @font-swatch5-font-weight;
+        color: @font-swatch10-color;
+    }
+    .signupform__form-group {
+        margin-bottom: 0;
+    }
+    .signupform__input {
+        display: inline-block;
+        float: left; 
+        width: 60%;
+    }
+    .button--submit {
+        width: 40%;
+        display: inline-block;
+        padding: 4px;
+    }  
+    .signupform__form {
+        padding: 20px 0 20px;
+    }   
+    .social-link {
+        padding: 0;
+        border: 0;
+    }   
+    .socialicons__social-item a:hover {
+        color: @font-swatch9-color;
+    } 
+    .socialicons__social-item:hover {
+        background-color: transparent;
+        color: transparent;
+    }  
+    .social-item {
+        margin-bottom: 0;
+    } 
+    .map__embed-wrap {
+        min-width: 400px;
     }
 }
 
-.template-footer .twitter__avatar {
-    margin: 0px auto 10px;
-    display: table;
-}
-
-.template-footer .signupform__form-group {
-    margin-bottom: 0;
-}
-
-.template-footer .signupform__input {
-    display: inline-block;
-    float:left; 
-    width: 70%;
-}
-
-.template-footer .button--submit {
-    width: 30%;
-    display: inline-block;
-    padding: 5px;
-}
-
-.template-footer .signupform__form {
-    padding: 20px 0 20px;
-}
-
-.template-footer .social-link {
-    padding: 0;
-    border: 0;
-}
-
-.template-footer .socialicons__social-item a:hover {
-    color: @font-swatch9-color;
-}
-
-.template-footer .socialicons__social-item:hover {
-    background-color: transparent;
-    color: transparent;
-}
-
-.template-footer .social-item {
-    margin-bottom: 0;
-}
-
-.template-footer .map__embed-wrap {
-    min-width: 400px;
-}
 
 // -----------------------------
 // 15. #Facebook
