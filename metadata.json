@@ -2,7 +2,11 @@
     "name":"Vision",
     "thumbnail":"vision.png",
     "screenshot":"vision.png",
-    "tags": { "en": ["minimal", "clean", "gallery", "orange", "portfolio", "technology", "camera", "images", "modern", "design"] },
+    "tags": {
+        "en": ["design", "portfolio", "art", "images", "agency", "creative", "clean", "media", "studio", "photography"],
+        "es": ["diseño", "portafolio", "arte", "imágenes", "agencia", "limpio", "comunicacion", "estudio", "fotografico"],
+        "pt": ["design", "portfolio", "arte", "imagens", "agência", "limpo", "mídia", "estúdio", "fotografia"]
+    },
     "pageTypes":["home"],
     "templateType":"standard",
     "widgetVersion":2,
