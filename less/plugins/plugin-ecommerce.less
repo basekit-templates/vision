@@ -188,10 +188,19 @@
 .summary-table .cell {
     padding: 20px 10px;
     @media @mobile {
-        padding: 0;
+        padding: 10px;
     }
 }
 
+.ecombasketsummary__quantity-wrap {
+    @media @mobile {
+        margin: 0px auto;
+    }
+}
+
+.summary-table .cell:not(.cell--title):before {
+    margin-bottom: 5px;
+}
 
 // -------------------------------
 // 5. #BASKET FILTERS
@@ -199,6 +208,7 @@
 
 .ecomproductslist__fieldset--filters {
     float:left;
+    width: 60%;
     @media @tablet {
         width:100%;
     }
@@ -206,6 +216,7 @@
 
 .ecomproductslist__fieldset--search {
     float: right;
+    width: 40%;
     @media @tablet {
         float: initial;
     }
@@ -235,6 +246,7 @@
 
 .ecomproductslist__form-body {
     margin: 0 0px 20px 0px;
+    text-align: left;
 }
 
 .cell--header.ecombasketsummary__cell, 
