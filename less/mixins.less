@@ -3,6 +3,8 @@
 // -----------------------------
 
 
+
+
 // -----------------------------
 // Colour Variables
 // -----------------------------
@@ -48,6 +50,9 @@
 	align-items: center;
 }
 
+
+
+
 // -----------------------------
 // Button Transitions
 // -----------------------------
@@ -61,4 +66,19 @@ button:hover,
     -o-transition: 		all 0.5s ease;
     transition: 		all 0.5s ease;
     color: @font-swatch7-color;
+}
+
+
+
+
+// -----------------------------
+// Burger Icon Transitions
+// -----------------------------
+
+.transition (@prop: all, @time: 0.5s, @ease: ease) {
+    -webkit-transition: @prop @time @ease;
+    -moz-transition:    @prop @time @ease;
+    -ms-transition:     @prop @time @ease;
+    -o-transition:      @prop @time @ease;
+    transition:         @prop @time @ease;
 }
