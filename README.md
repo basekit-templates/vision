@@ -1,4 +1,4 @@
 Vision
 =========
 
-BaseKit Standard Theme
+BaseKit Standard v2 Template
