@@ -149,7 +149,7 @@ blockquote:before {
 .form-group { 
 	margin-bottom: 20px;
 	@media @mobile {
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -223,6 +223,7 @@ input[type="password"],
 textarea,
 .input--single-line {
 	border: 1px solid darken(@color-swatch7,10%);
+    webkit-appearance: none;
     &:focus {
     	border: 1px solid darken(@color-swatch7,10%);
         box-shadow: none;
