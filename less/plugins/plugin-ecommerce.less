@@ -231,6 +231,17 @@
     border: 0;
 }
 
+// Quantity Buttons
+.quantity-wrap .button--quantity {
+    width: 25px;
+    height: 25px;
+}
+
+.ecombasketsummary__quantity-field {
+    height: 25px;
+    padding-top: 3px;
+}
+
 // -------------------------------
 // 5. #BASKET FILTERS
 // -------------------------------
@@ -297,6 +308,7 @@ select {
     @media @tablet {
         margin: 0px auto;
         display: table;
+        text-align: center;
     }
 }
 
@@ -306,6 +318,9 @@ select {
 
 .product-filters .form-group {
     vertical-align: top;
+    @media @mobile {
+        text-align: center;
+    }
 }
 
 // -------------------------------
