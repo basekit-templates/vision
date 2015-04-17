@@ -38,7 +38,10 @@
 }
 
 .menu__section-header {
-    margin: 20px;
+    margin: 40px 20px;
+    @media @mobile {
+        margin: 20px;
+    }
 }
 
 .menu__item-subtitle {
@@ -78,9 +81,13 @@
 }
 
 // Item Image
-
 .item-image {
 	background-color: darken(@color-swatch1,5%);
+}
+
+// Menu Subsecion
+.menu-subsection {
+    margin: 40px 0px;
 }
 
 // Featured Section
