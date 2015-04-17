@@ -224,12 +224,14 @@ textarea,
 .input--single-line {
 	border: 1px solid darken(@color-swatch7,10%);
     webkit-appearance: none;
+    min-height: 40px;
     &:focus {
     	border: 1px solid darken(@color-swatch7,10%);
         box-shadow: none;
         outline: none;
     }
 }
+
 .contact-form__form legend,
 .signup-form__form label,
 .blog-search__form label,
@@ -238,6 +240,10 @@ textarea,
     text-align: center;
     font-size: @font-swatch1-font-size;
     font-weight: @font-swatch1-font-weight;
+}
+
+textarea {
+    min-height: 150px;
 }
 
 // -----------------------------

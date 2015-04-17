@@ -23,7 +23,7 @@
             "color2":"#01b4f0",
             "color3":"#f35e26",
             "color4":"#3d3c40",
-            "color5":"#2b3040",
+            "color5":"#999999",
             "color6":"#ffffff",
             "color7":"#EAEAEA"
         },
@@ -99,7 +99,7 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "14px",
             "font-weight": "300",
             "line-height": "22px",
@@ -129,7 +129,7 @@
         },
         "font8": {
             "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
-            "font-size": "50px",
+            "font-size": "30px",
             "font-weight": "700",
             "line-height": "58px",
             "color": "@color-swatch1",
@@ -137,7 +137,7 @@
         },
         "font9": {
             "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
-            "font-size": "16px",
+            "font-size": "14px",
             "font-weight": "300",
             "line-height": "24px",
             "color": "@color-swatch3",
