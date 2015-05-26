@@ -639,6 +639,39 @@ input.input[type=search],
 // 10.  #Signup Form
 // -----------------------------
 
+.signupform__form,
+.blogsearch__form {
+    text-align: left;
+}
+
+.signupform__form-group,
+.blogsearch__form-group {
+    display: inline-block;
+    vertical-align: top;
+    &:first-child {
+        width: 70%;
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &:last-child {
+        width: 29%;
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.signupform__form-body,
+.blogsearch__form-body {
+    margin: 0 30px 10px;
+    @media @mobile {
+        margin: 10px 20px 0px;
+    }
+}
+
 .signup-form__legend {
     padding:0;
 }
@@ -647,6 +680,11 @@ input.input[type=search],
     margin:0px auto;
     display:table;
     width:70%;
+}
+
+.signupform__button,
+.blogsearch__button {
+    padding: 4px 30px 5px;
 }
 
 
@@ -804,11 +842,13 @@ input.input[type=search],
     .button--submit {
         width: 40%;
         display: inline-block;
-        padding: 4px;
+        padding: 4px 4px 5px 4px;
     }  
     .signupform__form {
         padding: 10px 0 20px;
-        min-width: 400px;
+        width: 100%;
+        max-width: 350px;
+        margin: 0px auto;
         @media @mobile {
             min-width: 280px;
         }
