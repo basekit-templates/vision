@@ -201,13 +201,10 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    align-items: center;
-    justify-content: center;
+    display: table;
+    min-height: 300px;
+    height: 300px;
+    width: 100%;
 }
 
 
@@ -215,12 +212,13 @@
 // --------------------
 
 .feature__content-wrap {
-    text-align: center;
+    text-align:center;
     max-width: 80%;
-    margin: 0px auto;
-    display: table;
+    vertical-align: middle;
+    display: table-cell;
+    background-color: fade(@color-swatch4, 20%);
     @media @tablet {
-        max-width: 100%;
+        max-width:100%;
     }
 }
 
