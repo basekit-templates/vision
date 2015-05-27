@@ -202,11 +202,6 @@ label {
 // Select
 // ----------
 
-input, textarea, select {
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-}
-
 select {
     height: 36px;
     outline: none;
@@ -215,6 +210,7 @@ select {
     background-color: @color-swatch1;
     font-size: 12px;
     text-indent: 0;
+    -webkit-appearance: none;
     &:hover, &:focus {
         background-color: @color-swatch1;
         cursor: pointer;
@@ -227,6 +223,7 @@ select {
 
 input {
 	border: 1px solid darken(@color-swatch7,10%);
+    -webkit-appearance: none;
 }
 
 input[type="search"],
@@ -235,7 +232,7 @@ input[type="password"],
 textarea,
 .input--single-line {
 	border: 1px solid darken(@color-swatch7,10%);
-    webkit-appearance: none;
+    -webkit-appearance: none;
     min-height: 40px;
     &:focus {
     	border: 1px solid darken(@color-swatch7,10%);
