@@ -319,6 +319,46 @@
 // 6.  #Gallery
 // -----------------------------
 
+
+// Homepage Gallery
+// ----------------------
+
+.homepage-gallery .gallery {
+    @media @mobile {
+        margin-bottom: 10px;
+    }
+}
+
+// Homepage Gallery Item
+.homepage-gallery .gallery__gallery-item {
+    position: relative;
+    width: 50%;
+    margin-bottom: 0;
+    // Display 100% at mobile
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+// Gallery Image
+.homepage-gallery .gallery__image-link {
+    display: block;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 0;
+    @media @tablet {
+        height: 210px;
+    }
+}
+
+// Gallery Caption
+.homepage-gallery .gallery__caption {
+    padding: 15px 30px;
+}
+
+
 // Gallery Layout
 // --------------
 
@@ -368,6 +408,10 @@
     }
 }
 
+.responsivecolumns .gallery__image-link {
+  height: 0;
+}
+
 // Hide Img Element
 .gallery__image {
     display: none;
@@ -411,45 +455,6 @@
 
 .image-title {
     margin-right: 20px;
-}
-
-
-// Homepage Gallery
-// ----------------------
-
-.homepage-gallery .gallery {
-    @media @mobile {
-        margin-bottom: 10px;
-    }
-}
-
-// Homepage Gallery Item
-.homepage-gallery .gallery__gallery-item {
-    position: relative;
-    width: 50%;
-    margin-bottom: 0;
-    // Display 100% at mobile
-    @media @mobile {
-        width: 100%;
-    }
-}
-
-// Gallery Image
-.homepage-gallery .gallery__image-link {
-    display: block;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-bottom: 0;
-    @media @tablet {
-        height: 210px;
-    }
-}
-
-// Gallery Caption
-.homepage-gallery .gallery__caption {
-    padding: 15px 30px;
 }
 
 
