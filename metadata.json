@@ -67,7 +67,7 @@
     "fontSwatch": {
        "title": "Arimo, Helvetica, Arial, sans-serif",
         "font1": {
-            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Arimo\", Helvetica, Arial, sans-serif",
             "font-size": "30px",
             "font-weight": "300",
             "line-height": "38px",
@@ -75,7 +75,7 @@
             "letter-spacing": "2px"
         },
         "font2": {
-            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Arimo\", Helvetica, Arial, sans-serif",
             "font-size": "26px",
             "font-weight": "300",
             "line-height": "34px",
@@ -83,7 +83,7 @@
             "letter-spacing": "2px"
         },
         "font3": {
-            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Arimo\", Helvetica, Arial, sans-serif",
             "font-size": "22px",
             "font-weight": "300",
             "line-height": "30px",
@@ -91,7 +91,7 @@
             "letter-spacing": "2px"
         },
         "font4": {
-            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Arimo\", Helvetica, Arial, sans-serif",
             "font-size": "18px",
             "font-weight": "300",
             "line-height": "26px",
@@ -107,7 +107,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Arimo\", Helvetica, Arial, sans-serif",
             "font-size": "14px",
             "font-weight": "400",
             "line-height": "inherit",
@@ -118,7 +118,7 @@
             "background-color-hover": "@color-swatch1"
          },
         "font7": {
-            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Arimo\", Helvetica, Arial, sans-serif",
             "font-size": "14px",
             "font-weight": "300",
             "line-height": "inherit",
@@ -128,7 +128,7 @@
             "background-color-hover": "darken(@color-swatch3,10%)"
         },
         "font8": {
-            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Arimo\", Helvetica, Arial, sans-serif",
             "font-size": "30px",
             "font-weight": "700",
             "line-height": "48px",
@@ -144,7 +144,7 @@
             "letter-spacing": "0px"
         },
         "font10": {
-            "font-family": "\"Arimo\", \"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Arimo\", Helvetica, Arial, sans-serif",
             "font-size": "20px",
             "font-weight": "400",
             "line-height": "28px",
