@@ -852,8 +852,11 @@ input.input[type=search],
     .signupform__form {
         padding: 10px 0 20px;
         width: 100%;
-        width: 250px;
+        max-width: 350px;
         margin: 0px auto;
+        @media @mobile {
+            width: 250px;
+        }
     }
     .signupform__legend {
         text-align: center;
