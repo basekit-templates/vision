@@ -842,6 +842,10 @@ input.input[type=search],
         display: inline-block;
         float: left; 
         width: 60%;
+        @media @mobile {
+            width: 100%;
+            margin-bottom: 15px;
+        }
     }
     .button--submit {
         width: 40%;
@@ -855,7 +859,7 @@ input.input[type=search],
         max-width: 350px;
         margin: 0px auto;
         @media @mobile {
-            width: 250px;
+            width: 180px;
         }
     }
     .signupform__legend {
