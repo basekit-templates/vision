@@ -78,8 +78,12 @@
 }
 
 .blogpost__button {
-	min-width: 260px;
-	width: 260px;
+	min-width: 240px;
+	padding: 6px 20px;
+	@media @mobile {
+		width: 180px;
+		min-width: 180px;
+	}
 }
 
 // Blog Post List Footer
