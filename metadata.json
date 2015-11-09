@@ -23,7 +23,7 @@
             "color2":"#01b4f0",
             "color3":"#f35e26",
             "color4":"#3d3c40",
-            "color5":"#A0A0A0",
+            "color5":"#A5A5A5",
             "color6":"#ffffff",
             "color7":"#EAEAEA"
         },
@@ -129,9 +129,9 @@
         },
         "font8": {
             "font-family": "\"Arimo\", Helvetica, Arial, sans-serif",
-            "font-size": "50px",
+            "font-size": "30px",
             "font-weight": "700",
-            "line-height": "58px",
+            "line-height": "40px",
             "color": "@color-swatch1",
             "letter-spacing": "3px"
         },
