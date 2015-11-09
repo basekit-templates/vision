@@ -68,9 +68,9 @@
        "title": "Arimo, Helvetica, Arial, sans-serif",
         "font1": {
             "font-family": "\"Arimo\", Helvetica, Arial, sans-serif",
-            "font-size": "30px",
+            "font-size": "50px",
             "font-weight": "300",
-            "line-height": "42px",
+            "line-height": "60px",
             "color": "@color-swatch4",
             "letter-spacing": "2px"
         },
@@ -130,7 +130,7 @@
         "font8": {
             "font-family": "\"Arimo\", Helvetica, Arial, sans-serif",
             "font-size": "30px",
-            "font-weight": "700",
+            "font-weight": "300",
             "line-height": "40px",
             "color": "@color-swatch1",
             "letter-spacing": "3px"
