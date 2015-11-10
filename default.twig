@@ -9,8 +9,7 @@
 
 	<!-- Page Title -->
 	<div class="page-titles">
-		<h1>{{widget('content', 'pagetitle-default', {content: 'Lorem Ipsum Dolor Sit Amet', lines: 'all'})|raw}}</h1>
-		<span>{{widget('content', 'pagedescription-default', {content: 'Donec id elit non sapien tincidunt', lines: 'all'})|raw}}</span>
+		<h1>{{widget('pagetitle', 'title', {})|raw}}</h1>
 	</div>
 	
 	<!-- Container -->
@@ -33,3 +32,4 @@
 {% include "includes/footer.twig" %}
 
 {% endblock %}
+
