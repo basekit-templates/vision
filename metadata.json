@@ -24,7 +24,7 @@
             "color3":"#f35e26",
             "color4":"#3d3c40",
             "color5":"#A5A5A5",
-            "color6":"#ffffff",
+            "color6":"#A5A5A5",
             "color7":"#EAEAEA"
         },
         "Swatch 2": {
@@ -68,9 +68,9 @@
        "title": "Arimo, Helvetica, Arial, sans-serif",
         "font1": {
             "font-family": "\"Arimo\", Helvetica, Arial, sans-serif",
-            "font-size": "46px",
+            "font-size": "30px",
             "font-weight": "300",
-            "line-height": "56px",
+            "line-height": "40px",
             "color": "@color-swatch4",
             "letter-spacing": "1px"
         },
@@ -103,15 +103,15 @@
             "font-size": "16px",
             "font-weight": "300",
             "line-height": "24px",
-            "color": "@color-swatch4",
+            "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
         "font6": {
             "font-family": "\"Arimo\", Helvetica, Arial, sans-serif",
             "font-size": "14px",
-            "font-weight": "400",
+            "font-weight": "700",
             "line-height": "inherit",
-            "color": "darken(@color-swatch7,30%)",
+            "color": "@color-swatch6",
             "color-hover": "@color-swatch4",
             "letter-spacing": "1px",
             "background-color": "@color-swatch1",
@@ -120,7 +120,7 @@
         "font7": {
             "font-family": "\"Arimo\", Helvetica, Arial, sans-serif",
             "font-size": "14px",
-            "font-weight": "300",
+            "font-weight": "700",
             "line-height": "inherit",
             "color": "@color-swatch1",
             "letter-spacing": "1px",
