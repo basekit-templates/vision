@@ -16,6 +16,9 @@
 .navigation-list {
 	min-width: 140px;
 	margin: 0;
+    @media @tablet {
+        background-color: @color-swatch3;
+    }
 }
 
 // Default Page
@@ -28,27 +31,37 @@
 // ---------------
 
 .navigation-item {
-	@media @tablet {
-		width: 100%;
-	}
+    @media @tablet {
+        width: 100%;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
 }
 
 // Selected Nav Item
 .navigation-item.selected > .item-name { 
     color: @font-swatch6-color-hover;
+    @media @tablet {
+        color: @font-swatch7-color;
+    }
 }
 
 .extendednavigation li.selected a, 
 .extendednavigation li.selected .text {
     color: @font-swatch6-color;
+        @media @tablet {
+        color: @font-swatch7-color;
+    }
 }
 
 // Navigation Link
 .navigation-item .item-name {
 	padding: 5px 15px;
-	@media @mobile {
-		padding: 8px 15px;
-	}
+    @media @tablet {
+        color: @font-swatch7-color;
+        padding: 8px 15px;
+    }
 }
 
 .item-name {
@@ -121,7 +134,8 @@
 
 .navigation-item.open .navigation-list--children {
 	@media @tablet {
-		border: 1px solid darken(@color-swatch7, 10%);
+		background-color: darken(@color-swatch3, 7%);
+        border: 0;
 	}
 }
 
@@ -226,10 +240,11 @@
         display: none;
         .open & {
             display: block;
+            margin-top: 20px;
         }
     }
     .navigation-item {
         width: 100%;
-        border-bottom: 1px solid darken(@color-swatch1, 7%);
+        border-bottom: 1px solid darken(@color-swatch3, 7%);
     }
 }
