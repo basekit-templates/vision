@@ -4,9 +4,17 @@
 
 {% include "includes/header.twig" %}
 
+<!-- Page Title -->
+<div class="page-titles">
+    <h1>{{widget('content', 'pagetitle', {content: 'Lorem Ipsum Dolor Sit Amet', lines: 'all'})|raw}}</h1>
+    <span>{{widget('content', 'pagedescription', {content: 'Donec id elit non sapien tincidunt', lines: 'all'})|raw}}</span>
+</div>
+<!-- End Page Title -->
+
+
 <!-- Homepage Gallery -->
 <section class="homepage-gallery">
-    {{widget('gallery', 'gallery1', 
+    {{widget('gallery', 'gallery1',
         {'albumRef':0,
         'showDescription': true,
         'showTitle': true,
@@ -37,7 +45,7 @@
 <!-- Footer Feature -->
 <section class="feature">
     {{widget('feature', 'featurehome', {
-        "header": "profile", 
+        "header": "profile",
         "defaultBgImg": asset('images/feature-bg.jpg'),
         'positionTopPercentage': '0',
         'showBtn': true,
